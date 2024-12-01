@@ -121,11 +121,11 @@ const RoutePlanning = () => {
   }, [sourceCity, destinationCity]);
 
   return (
-    <Container fluid style={{ height: "100vh", padding: 0 }}>
-      <Row className="h-100 justify-content-center align-items-center">
+    <Container fluid>
+      <Row className="justify-content-center">
         {/* Left Column (Form Section) */}
-        <Col md={6} className="d-flex justify-content-center">
-          <Card style={{ width: "100%", maxWidth: "38rem", margin: "0 auto" }}>
+        <Col md={6} className="d-flex">
+          <Card style={{ width: "38rem", margin: "0 auto", flex: 1 }}>
             <Card.Body>
               <div
                 style={{
@@ -135,9 +135,9 @@ const RoutePlanning = () => {
                   marginBottom: "30px",
                 }}
               >
-                <Button variant="primary" className="mt-3">
+                <StyledButton className="mt-3" variant="primary">
                   ROUTE PLANNING
-                </Button>
+                </StyledButton>{" "}
               </div>
 
               <Form>
@@ -151,6 +151,10 @@ const RoutePlanning = () => {
                       marginBottom: "10px",
                     }}
                   >
+                    <IconContainer>
+                      <SourceIcon />
+                    </IconContainer>
+
                     <Form.Control
                       type="text"
                       placeholder="e.g. Helsinki"
@@ -175,22 +179,14 @@ const RoutePlanning = () => {
                     marginBottom: "10px",
                   }}
                 >
-                  <Button
+                  <StyledSwapButton
                     onClick={handleSwap}
                     style={{
                       backgroundColor: "#B2A0F3",
-                      border: "none",
-                      borderRadius: "5px",
-                      color: "black",
-                      cursor: "pointer",
-                      padding: "20px",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
                     }}
                   >
                     <FaExchangeAlt style={{ marginRight: "5px" }} />
-                  </Button>
+                  </StyledSwapButton>
                 </div>
 
                 <Form.Group controlId="destinationCity" className="mt-5">
@@ -203,6 +199,10 @@ const RoutePlanning = () => {
                       marginTop: "10px",
                     }}
                   >
+                    <IconContainer>
+                      <DestinationIcon />
+                    </IconContainer>
+
                     <Form.Control
                       type="text"
                       placeholder="e.g. Tampere"
@@ -225,8 +225,8 @@ const RoutePlanning = () => {
         </Col>
 
         {/* Right Column (Map Section) */}
-        <Col md={6} className="d-flex justify-content-center">
-          <Card style={{ width: "100%", maxWidth: "38rem", margin: "0 auto" }}>
+        <Col md={6} className="d-flex">
+          <Card style={{ width: "38rem", margin: "0 auto", flex: 1 }}>
             <Card.Body>
               <Card.Title>Map</Card.Title>
               <MapContainer
