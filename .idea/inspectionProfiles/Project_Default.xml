@@ -1,0 +1,66 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DataFlowIssue" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="SUGGEST_NULLABLE_ANNOTATIONS" value="false" />
+      <option name="DONT_REPORT_TRUE_ASSERT_STATEMENTS" value="false" />
+    </inspection_tool>
+    <inspection_tool class="VulnerableLibrariesLocal" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="isIgnoringEnabled" value="true" />
+      <option name="ignoredModules">
+        <list>
+          <option value="route-planner" />
+          <option value="route-planner" />
+          <option value="route-planner" />
+          <option value="route-planner" />
+          <option value="route-planner" />
+          <option value="route-planner" />
+          <option value="route-planner" />
+          <option value="route-planner" />
+          <option value="route-planner" />
+          <option value="route-planner" />
+          <option value="route-planner" />
+          <option value="route-planner" />
+          <option value="route-planner" />
+          <option value="route-planner" />
+        </list>
+      </option>
+      <option name="ignoredPackages">
+        <list>
+          <option value="ch.qos.logback:logback-classic:1.4.7" />
+          <option value="com.jayway.jsonpath:json-path:2.8.0" />
+          <option value="ch.qos.logback:logback-core:1.4.7" />
+          <option value="org.apache.tomcat.embed:tomcat-embed-core:10.1.8" />
+          <option value="org.springframework:spring-core:6.0.9" />
+          <option value="org.springframework.boot:spring-boot:3.1.0" />
+          <option value="org.apache.tomcat.embed:tomcat-embed-websocket:10.1.8" />
+          <option value="org.springframework:spring-web:6.0.9" />
+          <option value="org.yaml:snakeyaml:1.33" />
+          <option value="org.springframework.security:spring-security-core:6.1.0" />
+          <option value="org.xmlunit:xmlunit-core:2.9.1" />
+          <option value="org.springframework.boot:spring-boot-devtools:3.1.0" />
+          <option value="org.springframework:spring-webmvc:6.0.9" />
+          <option value="org.springframework:spring-context:6.0.9" />
+        </list>
+      </option>
+      <option name="ignoredReasons">
+        <list>
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
